@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+apply plugin: 'channel'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.ate.helloworld"
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        config {
+            keyAlias 'atsk'
+            keyPassword 'atsk12345678'
+            storeFile file('E:/Android/atsk.jks')
+            storePassword 'atsk12345678'
+//            v1SigningEnabled true
+//            v2SigningEnabled true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+
+channel {
+    //指定渠道文件，一定要找准你项目路径下的文件
+    channelFile = file("../channel.txt")
+    //多渠道包的输出目录，默认为new File(project.buildDir,"channel")
+    baseOutputDir = new File(project.buildDir, "channel")
+    //多渠道包的命名规则，默认为：${appName}-${versionName}-${versionCode}-${flavorName}-${buildType}
+    //命名规则可以不写,直接生成
+    //快速模式：生成渠道包时不进行校验（速度可以提升10倍以上）
+    isFastMode = true
+}
+
+//rebuildChannel{
+//    //指定渠道文件
+//    channelFile = file("../channel.txt")
+//}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    api 'com.leon.channel:helper:1.1.7'
+    api 'io.reactivex.rxjava2:rxjava:2.0.1'
+    api 'io.reactivex.rxjava2:rxandroid:2.0.1'
+
+    // Android 支持 Retrofit
+    api 'com.squareup.retrofit2:retrofit:2.1.0'
+
+// 衔接 Retrofit & RxJava
+// 此处一定要注意使用RxJava2的版本
+    api 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
+
+// 支持Gson解析
+    api 'com.squareup.retrofit2:converter-gson:2.1.0'
+
+
+}
