@@ -65,13 +65,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //        createTest();
 //        justTest();
 //        fromArrayTest();
-        fromIterableTest();
+//        fromIterableTest();
 //        deferTest();
 //        timerTest();
 //        intervalTest();
 //        intervalRangeTest();
 //        range();
-        rangeLongTest();
+//        rangeLongTest();
     }
 
 
@@ -460,5 +460,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     }
                 });
     }
-
 }

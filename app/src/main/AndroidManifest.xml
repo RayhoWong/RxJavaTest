@@ -14,20 +14,26 @@
         <activity android:name=".activity.MainActivity" />
 
         <!-- 轮询网络请求 -->
-        <activity android:name=".activity.RxJavaRequest"></activity>
+        <activity android:name=".activity.RxJavaRequest" />
 
         <!-- 变换操作符测试 -->
-        <activity android:name=".activity.SecondActivity">
+        <activity android:name=".activity.SecondActivity"></activity>
+
+        <!-- 嵌套网络请求 -->
+        <activity android:name=".activity.RxJavaNestedRequestActivity">
 
         </activity>
 
-        <!--嵌套网络请求-->
-        <activity android:name=".activity.RxJavaNestedRequestActivity">
+        <!--组合操作符测试-->
+        <activity android:name=".activity.ThirdActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
     </application>
 
 </manifest>
