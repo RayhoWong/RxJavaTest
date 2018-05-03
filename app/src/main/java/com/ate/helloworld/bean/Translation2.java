@@ -17,7 +17,7 @@ public class Translation2 {
 
     //定义 输出返回数据 的方法
     public String show() {
-        return content.out;
+        return "第二次翻译"+content.out;
     }
 
 }

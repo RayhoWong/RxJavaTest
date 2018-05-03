@@ -17,23 +17,27 @@
         <activity android:name=".activity.RxJavaRequest" />
 
         <!-- 变换操作符测试 -->
-        <activity android:name=".activity.SecondActivity"></activity>
+        <activity android:name=".activity.SecondActivity" />
 
         <!-- 嵌套网络请求 -->
-        <activity android:name=".activity.RxJavaNestedRequestActivity">
+        <activity android:name=".activity.RxJavaNestedRequestActivity" />
+
+        <!-- 组合操作符测试 -->
+        <activity android:name=".activity.ThirdActivity"></activity>
+
+        <!-- 模拟从内存/磁盘/网络获取数据 -->
+        <activity android:name=".activity.GetDataFromActivity">
 
         </activity>
 
-        <!--组合操作符测试-->
-        <activity android:name=".activity.ThirdActivity">
+        <!--merge和zip操作符应用-->
+        <activity android:name=".activity.MergeAndZipActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
     </application>
 
 </manifest>
