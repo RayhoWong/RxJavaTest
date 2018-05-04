@@ -23,15 +23,18 @@
         <activity android:name=".activity.RxJavaNestedRequestActivity" />
 
         <!-- 组合操作符测试 -->
-        <activity android:name=".activity.ThirdActivity"></activity>
+        <activity android:name=".activity.ThirdActivity" />
 
         <!-- 模拟从内存/磁盘/网络获取数据 -->
-        <activity android:name=".activity.GetDataFromActivity">
+        <activity android:name=".activity.GetDataFromActivity"></activity>
+
+        <!-- merge和zip操作符应用 -->
+        <activity android:name=".activity.MergeAndZipActivity">
 
         </activity>
 
-        <!--merge和zip操作符应用-->
-        <activity android:name=".activity.MergeAndZipActivity">
+        <!--功能性操作符测试-->
+        <activity android:name=".activity.FourthActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

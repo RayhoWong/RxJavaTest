@@ -420,6 +420,7 @@ public class ThirdActivity extends AppCompatActivity {
                     @Override
                     public void onComplete() {
                         Log.d(TAG, "对Complete事件作出响应");
+
                     }
                 });
     }
