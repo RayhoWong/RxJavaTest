@@ -22,6 +22,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 //原文链接:https://www.jianshu.com/p/11b3ec672812
+//无条件轮询
 public class RxJavaRequest extends AppCompatActivity {
 
     private static final String TAG = "Rxjava";

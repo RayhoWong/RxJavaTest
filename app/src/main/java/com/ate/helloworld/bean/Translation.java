@@ -22,4 +22,7 @@ public class Translation {
         return content.out;
     }
 
+    public void show2(){
+        Log.d("RxJava", content.out );
+    }
 }

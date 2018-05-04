@@ -41,4 +41,8 @@ public interface GetRequest_Interface {
     @GET("ajax.php?a=fy&f=auto&t=auto&w=hi%20china")
     Observable<Translation2> getCall_4();
 
+    //网络请求5
+    @GET("ajax.php?a=fy&f=auto&t=auto&w=hi%20world")
+    Observable<Translation> getCall_5();
+
 }

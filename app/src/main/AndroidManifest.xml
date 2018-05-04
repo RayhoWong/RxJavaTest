@@ -26,15 +26,18 @@
         <activity android:name=".activity.ThirdActivity" />
 
         <!-- 模拟从内存/磁盘/网络获取数据 -->
-        <activity android:name=".activity.GetDataFromActivity"></activity>
+        <activity android:name=".activity.GetDataFromActivity" />
 
         <!-- merge和zip操作符应用 -->
-        <activity android:name=".activity.MergeAndZipActivity">
+        <activity android:name=".activity.MergeAndZipActivity"></activity>
+
+        <!-- 功能性操作符测试 -->
+        <activity android:name=".activity.FourthActivity">
 
         </activity>
 
-        <!--功能性操作符测试-->
-        <activity android:name=".activity.FourthActivity">
+        <!--有条件轮询repeatWhen操作符应用-->
+        <activity android:name=".activity.RxJavaRequest2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
