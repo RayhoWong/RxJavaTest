@@ -73,9 +73,10 @@ public class RxJavaRequest2 extends AppCompatActivity {
                             // 此处选择发送onError事件以结束轮询，因为可触发下游观察者的onError（）方法回调
                             return Observable.error(new Throwable("轮询结束"));
                         }
-//                        if(flag.equals("嗨世界")){
-//                            return Observable.error(new Throwable("轮询结束"));
-//                        }
+                        //测试
+                        //                        if(flag.equals("嗨世界")){
+                        //                            return Observable.error(new Throwable("轮询结束"));
+                        //                        }
 
                         // 若轮询次数＜4次，则发送1Next事件以继续轮询
                         // 注：此处加入了delay操作符，作用 = 延迟一段时间发送（此处设置 = 2s），以实现轮询间间隔设置
@@ -95,14 +96,14 @@ public class RxJavaRequest2 extends AppCompatActivity {
                     public void onNext(Translation value) {
                         //接受服务器返回的数据
                         flag = value.show();
-                        Log.d(TAG, value.show()+" i="+i);
+                        Log.d(TAG, value.show() + " i=" + i);
                         i++;
                     }
 
                     @Override
                     public void onError(Throwable e) {
                         // 获取轮询结束信息
-                        Log.d(TAG,  e.toString());
+                        Log.d(TAG, e.toString());
                     }
 
                     @Override

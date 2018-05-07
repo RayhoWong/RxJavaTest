@@ -29,15 +29,24 @@
         <activity android:name=".activity.GetDataFromActivity" />
 
         <!-- merge和zip操作符应用 -->
-        <activity android:name=".activity.MergeAndZipActivity"></activity>
+        <activity android:name=".activity.MergeAndZipActivity" />
 
         <!-- 功能性操作符测试 -->
-        <activity android:name=".activity.FourthActivity">
+        <activity android:name=".activity.FourthActivity" />
+
+        <!-- 有条件轮询repeatWhen操作符应用 -->
+        <activity android:name=".activity.RxJavaRequest2" />
+
+        <!-- 网络请求出错重连 -->
+        <activity android:name=".activity.RxJavaRequest3" />
+
+        <!-- 线程的控制(切换/调度) -->
+        <activity android:name=".activity.RxJavaRequest4">
 
         </activity>
 
-        <!--有条件轮询repeatWhen操作符应用-->
-        <activity android:name=".activity.RxJavaRequest2">
+        <!--过滤操作符测试-->
+        <activity android:name=".activity.FifthActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -25,4 +25,15 @@ public class Translation {
     public void show2(){
         Log.d("RxJava", content.out );
     }
+
+    public void show3(){
+        System.out.println( "Rxjava翻译结果：" + status);
+        System.out.println("Rxjava翻译结果：" + content.from);
+        System.out.println("Rxjava翻译结果：" + content.to);
+        System.out.println("Rxjava翻译结果：" + content.vendor);
+        System.out.println("Rxjava翻译结果：" + content.out);
+        System.out.println("Rxjava翻译结果：" + content.errNo);
+    }
+
+
 }
