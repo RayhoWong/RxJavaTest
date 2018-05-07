@@ -41,12 +41,13 @@
         <activity android:name=".activity.RxJavaRequest3" />
 
         <!-- 线程的控制(切换/调度) -->
-        <activity android:name=".activity.RxJavaRequest4">
+        <activity android:name=".activity.RxJavaRequest4"></activity>
 
-        </activity>
+        <!-- 过滤操作符测试&功能防抖 -->
+        <activity android:name=".activity.FifthActivity"></activity>
 
-        <!--过滤操作符测试-->
-        <activity android:name=".activity.FifthActivity">
+        <!--联想搜索优化-->
+        <activity android:name=".activity.FilterSearchActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

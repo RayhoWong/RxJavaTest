@@ -45,8 +45,10 @@ public class FifthActivity extends AppCompatActivity {
      *
      */
     private void gongNengFangDou(){
+      /*  1. 此处采用了RxBinding：RxView.clicks(button) = 对控件点击进行监听，需要引入依赖：compile 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
+          2. 传入Button控件，点击时，都会发送数据事件（但由于使用了throttleFirst（）操作符，所以只会发送该段时间内的第1次点击事件）*/
         RxView.clicks(mBtn)
-                .throttleFirst(5,TimeUnit.SECONDS)
+                .throttleFirst(5,TimeUnit.SECONDS)// 才发送5s内第1次点击按钮的事件
                 .subscribe(new Observer<Object>() {
                     @Override
                     public void onSubscribe(Disposable d) {
@@ -515,4 +517,6 @@ public class FifthActivity extends AppCompatActivity {
                    }
                });
    }
+
+
 }
