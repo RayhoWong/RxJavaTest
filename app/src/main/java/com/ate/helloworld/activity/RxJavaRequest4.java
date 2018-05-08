@@ -20,6 +20,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
  * 线程的控制(切换/调度)
+ * 原文链接:https://www.jianshu.com/p/5225b2baaecd
  *
  */
 public class RxJavaRequest4 extends AppCompatActivity {

@@ -17,6 +17,7 @@ import io.reactivex.disposables.Disposable;
 
 /**
  * 联想搜索优化
+ * 原文链接:https://www.jianshu.com/p/ba0e7df9b927
  */
 public class FilterSearchActivity extends AppCompatActivity {
     private static final String TAG = "RxJava";
@@ -43,7 +44,7 @@ public class FilterSearchActivity extends AppCompatActivity {
          * 3. 采用skip(1)原因：跳过 第1次请求 = 初始输入框的空字符状态
          **/
         RxTextView.textChanges(ed)
-                .debounce(1, TimeUnit.SECONDS).skip(1)
+                .debounce(3, TimeUnit.SECONDS).skip(1)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Observer<CharSequence>() {
                     @Override

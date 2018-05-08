@@ -25,6 +25,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 /**
  * rxjava的功能性操作符测试
  * 网络请求出错重连(retryWhen的应用)
+ * 原文链接:https://www.jianshu.com/p/508c30aef0c1
  */
 public class RxJavaRequest3 extends AppCompatActivity {
 
