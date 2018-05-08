@@ -47,10 +47,14 @@
         <activity android:name=".activity.FifthActivity" />
 
         <!-- 联想搜索优化 -->
-        <activity android:name=".activity.FilterSearchActivity"/>
+        <activity android:name=".activity.FilterSearchActivity" />
 
-        <!--条件 / 布尔操作符-->
+        <!-- 条件 / 布尔操作符 -->
         <activity android:name=".activity.SixthActivity">
+        </activity>
+
+        <!--背压策略 重要-->
+        <activity android:name=".activity.BackPressureStrategyActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
