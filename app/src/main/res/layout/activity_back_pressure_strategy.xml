@@ -13,4 +13,16 @@
         android:layout_centerInParent="true"
         android:text="点击接受事件!"/>
 
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/btn"
+        android:layout_centerInParent="true"
+        android:text="点击接受事件2!"/>
+
+
+
 </RelativeLayout>
