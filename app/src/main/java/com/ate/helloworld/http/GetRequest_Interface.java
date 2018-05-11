@@ -58,4 +58,6 @@ public interface GetRequest_Interface {
     // 采用Observable<...>接口
     // getCall()是接受网络请求数据的方法
 
+
+
 }

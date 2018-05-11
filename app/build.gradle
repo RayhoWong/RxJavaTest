@@ -72,5 +72,8 @@ dependencies {
 
     api 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
 
+    // 依赖以下两个库，会自动引用基础库与Android库 rxlifecycler
+    api 'com.trello.rxlifecycle2:rxlifecycle-components:2.1.0'
+    api 'com.trello.rxlifecycle2:rxlifecycle-navi:2.1.0'
 
 }

@@ -127,4 +127,5 @@ public class MergeAndZipActivity extends AppCompatActivity {
                     }
                 });
     }
+
 }

@@ -50,11 +50,18 @@
         <activity android:name=".activity.FilterSearchActivity" />
 
         <!-- 条件 / 布尔操作符 -->
-        <activity android:name=".activity.SixthActivity">
+        <activity android:name=".activity.SixthActivity" />
+
+        <!-- 背压策略 重要 -->
+        <activity android:name=".activity.BackPressureStrategyActivity"></activity>
+
+        <!-- retrofit练手 -->
+        <activity android:name=".activity.RetrofitPracticeActivity">
+
         </activity>
 
-        <!--背压策略 重要-->
-        <activity android:name=".activity.BackPressureStrategyActivity">
+        <!--rxlifecycler测试-->
+        <activity android:name=".activity.RxlifecyclerTest">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

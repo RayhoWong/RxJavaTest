@@ -81,8 +81,4 @@ public class RxJavaRequest4 extends AppCompatActivity {
                     }
                 });
     }
-
-
-
-
 }

@@ -26,7 +26,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * 原文链接:https://www.jianshu.com/p/5f5d61f04f96
  */
 public class RxJavaNestedRequestActivity extends AppCompatActivity {
-
     private static final String TAG = "Rxjava";
 
     private Observable<Translation1> observable1;//注册
@@ -103,4 +102,6 @@ public class RxJavaNestedRequestActivity extends AppCompatActivity {
                     }
                 });
     }
+
+
 }
